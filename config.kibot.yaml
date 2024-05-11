@@ -27,3 +27,8 @@ outputs:
       create_gerber_job_file: true
       use_gerber_x2_attributes: true
       use_gerber_net_attributes: false
+  - name: 'gerb_drill'
+    comment: "Drill files for the board house"
+    type: gerb_drill
+    dir: gerberdir
+
