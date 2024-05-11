@@ -1,7 +1,7 @@
 kibot:
   version: 1
 preflight:
-  run_drc: true
+  drc: true
 outputs:
   - name: 'gerbers'
     comment: "Gerbers for the board house"

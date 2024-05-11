@@ -27,7 +27,7 @@ jobs:
         schema: 'pcb-esp32-tmc2209.kicad_sch'
         # optional - PCB design file
         board: 'pcb-esp32-tmc2209.kicad_pcb'
-    - name: upload results
+    - name: Upload results
       uses: actions/upload-artifact@v2
       with:
         name: output
