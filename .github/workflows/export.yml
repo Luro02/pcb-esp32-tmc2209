@@ -1,22 +1,23 @@
 name: Export
 
-on:
-  push:
-    paths:
-    - '**.kicad_sch'
-    - '**.kicad_pcb'
-    - '**.round-tracks-config'
-  pull_request:
-    paths:
-      - '**.kicad_sch'
-      - '**.kicad_pcb'
-      - '**.round-tracks-config'
+on: [pull_request, push]
+#on:
+#  push:
+#    paths:
+#    - '**.kicad_sch'
+#    - '**.kicad_pcb'
+#    - '**.round-tracks-config'
+#  pull_request:
+#    paths:
+#      - '**.kicad_sch'
+#      - '**.kicad_pcb'
+#      - '**.round-tracks-config'
 
 jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: INTI-CMNB/KiBot@v2_k8
       with:
         # Required - kibot config file
