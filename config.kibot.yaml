@@ -30,5 +30,5 @@ outputs:
   - name: 'gerb_drill'
     comment: "Drill files for the board house"
     type: gerb_drill
-    dir: gerberdir
+    dir: drill
 
