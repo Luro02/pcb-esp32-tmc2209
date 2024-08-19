@@ -6,7 +6,7 @@
 	(descr "ESP32-C6 general-purpose development board, based on ESP32-2-WROOM-1,It has all the ESP32-C6 pins exposed and is easy to connect and use.")
 	(tags "ESP32-C6")
 	(property "Reference" "REF**"
-		(at 11.6078 -2.8448 0)
+		(at 13.716 -3.556 0)
 		(layer "F.SilkS")
 		(uuid "c8227f23-f85b-4d5e-b1ca-65f8823f3974")
 		(effects
@@ -85,8 +85,8 @@
 		(uuid "3be6995c-1b5d-4206-a779-77dd7d4dfea4")
 	)
 	(fp_line
-		(start 2.794 -7.94532)
-		(end 22.606 -7.94532)
+		(start 3.302 -7.94532)
+		(end 22.098 -7.94532)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -95,8 +95,8 @@
 		(uuid "a7220907-a9f0-478a-b770-221830a56666")
 	)
 	(fp_line
-		(start 2.794 -1.59532)
-		(end 2.794 -7.94532)
+		(start 3.302 -1.59532)
+		(end 3.302 -7.94532)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -105,8 +105,8 @@
 		(uuid "c496ba81-d915-4830-89f0-5ee328f829b6")
 	)
 	(fp_line
-		(start 22.606 -7.94532)
-		(end 22.606 -1.59532)
+		(start 22.098 -7.94532)
+		(end 22.098 -1.59532)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -135,8 +135,8 @@
 		(uuid "4cf41fbf-09c6-45d2-a08a-a6e86d4fe57e")
 	)
 	(fp_rect
-		(start 1.016 38.608)
-		(end 10.16 45.8978)
+		(start 1.016 37.846)
+		(end 10.16 45.1358)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -146,8 +146,8 @@
 		(uuid "c1f07f36-4102-4c37-a197-44bff17cd2a1")
 	)
 	(fp_rect
-		(start 15.24 38.608)
-		(end 24.384 45.8978)
+		(start 15.24 37.846)
+		(end 24.384 45.1358)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -249,7 +249,7 @@
 		)
 	)
 	(fp_text user "USB"
-		(at 19.812 38.1 0)
+		(at 20.066 37.338 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "279ffb2c-08df-454c-ab84-686b36b9f2d9")
@@ -444,7 +444,7 @@
 		)
 	)
 	(fp_text user "UART"
-		(at 5.334 38.1 0)
+		(at 6.096 37.338 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "b8ac9c8a-03ba-48f6-96ae-954ffc158e94")

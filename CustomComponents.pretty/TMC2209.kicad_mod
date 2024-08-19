@@ -3,11 +3,11 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(property "Reference" "---^---"
+	(descr "Step/Dir Drivers for Two-Phase Bipolar Stepper Motors up to 2.8A peak – StealthChop™ for Quiet Movement – UART Interface Option – Sensorless Stall Detection StallGuard4.")
+	(property "Reference" "A"
 		(at 6.096 -6.35 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(hide yes)
 		(uuid "7336b4b8-2f36-46b0-ae12-fd1f1c24f6b4")
 		(effects
 			(font
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "TMC2209"
-		(at 6.096 1.27 90)
+		(at 6.096 -1.778 90)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "95816235-00d5-4a15-b558-a0d1a35553a5")
@@ -28,8 +28,8 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
+	(property "Footprint" "CustomComponents:TMC2209"
+		(at 5.588 -10.16 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -106,7 +106,7 @@
 		)
 	)
 	(fp_text user "EN"
-		(at 9.652 8.636 0)
+		(at 9.144 7.62 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "1380c405-68d6-4f6e-85e2-08e62183e9fa")
@@ -119,7 +119,7 @@
 		)
 	)
 	(fp_text user "MS1"
-		(at 8.128 7.112 0)
+		(at 8.382 6.096 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "179aa0cc-2db7-48b9-84a9-99f762cd1de2")
@@ -144,8 +144,8 @@
 			(justify left)
 		)
 	)
-	(fp_text user "?"
-		(at 10.414 2.54 0)
+	(fp_text user "SPREAD"
+		(at 5.588 2.54 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "44b26290-601f-4711-a0c3-6cc478a40047")
@@ -201,6 +201,19 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "9e51b121-95a0-4ece-a4dc-13f970f3bc94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "DIAG"
+		(at 4.826 8.89 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ac4bdafd-c63d-411e-ab5d-b51b77d48ce5")
 		(effects
 			(font
 				(size 1 1)
@@ -275,10 +288,23 @@
 		)
 	)
 	(fp_text user "MS2"
-		(at 8.128 5.08 0)
+		(at 8.128 4.318 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "f9b49eee-436a-40ab-99e1-9c0fa7f27aeb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "INDEX"
+		(at 8.382 8.89 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fa3005e5-c0c6-4f27-b5b4-7cb1a091b677")
 		(effects
 			(font
 				(size 1 1)
@@ -300,148 +326,159 @@
 			)
 		)
 	)
-	(pad "1" thru_hole circle
-		(at 0 -7.62)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "1" thru_hole oval
+		(at 0 -7.62 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "f6306052-3095-46d7-b913-e6e59a1e7823")
 	)
-	(pad "2" thru_hole circle
-		(at 0 -5.08)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "2" thru_hole oval
+		(at 0 -5.08 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "23d26329-9800-4da2-92f1-4033728bb4f9")
 	)
-	(pad "3" thru_hole circle
-		(at 0 -2.54)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "3" thru_hole oval
+		(at 0 -2.54 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "3828b56e-f2e3-4f04-815f-562b025b43b6")
 	)
-	(pad "4" thru_hole circle
-		(at 0 0)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "4" thru_hole oval
+		(at 0 0 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "4df193b0-fd08-48b8-8124-0573914b8898")
 	)
-	(pad "5" thru_hole circle
-		(at 0 2.54)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "5" thru_hole oval
+		(at 0 2.54 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "aacd042b-57c1-4d08-9015-0476735dfef4")
 	)
-	(pad "6" thru_hole circle
-		(at 0 5.08)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "6" thru_hole oval
+		(at 0 5.08 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "7f2cc531-c920-4228-898d-cac6a0d308e8")
 	)
-	(pad "7" thru_hole circle
-		(at 0 7.62)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "7" thru_hole oval
+		(at 0 7.62 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "f1ec0b61-f9ff-4d11-a6e9-a0f44f1f5faa")
 	)
-	(pad "8" thru_hole circle
-		(at 0 10.16)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "8" thru_hole oval
+		(at 0 10.16 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "8d8f0e55-d69c-4872-9827-217f45412018")
 	)
-	(pad "9" thru_hole circle
-		(at 12.446 -7.62)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "9" thru_hole oval
+		(at 12.446 -7.62 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "fddc1536-f81a-4f44-9e57-88838afbf455")
 	)
-	(pad "10" thru_hole circle
-		(at 12.446 -5.08)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "10" thru_hole oval
+		(at 12.446 -5.08 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "084adbf6-3a42-4262-a2f7-54eb8ab7b46a")
 	)
-	(pad "11" thru_hole circle
-		(at 12.446 -2.54)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "11" thru_hole oval
+		(at 12.446 -2.54 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "adce44de-45b3-4842-8e0f-61cd304334e0")
 	)
-	(pad "12" thru_hole circle
-		(at 12.446 0)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "12" thru_hole oval
+		(at 12.446 0 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "b741e4fe-4c97-4495-b900-d1c71ec381bf")
 	)
-	(pad "13" thru_hole circle
-		(at 12.446 2.54)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "13" thru_hole oval
+		(at 12.446 2.54 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "79b8e135-f852-4f84-804f-fcc79329f81a")
 	)
-	(pad "14" thru_hole circle
-		(at 12.446 5.08)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "14" thru_hole oval
+		(at 12.446 5.08 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "ab3ecb9b-ce7f-4239-9918-db90de83dc65")
 	)
-	(pad "15" thru_hole circle
-		(at 12.446 7.62)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "15" thru_hole oval
+		(at 12.446 7.62 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "d0d7d28d-8aff-4d42-a645-4d8cad6be8af")
 	)
-	(pad "16" thru_hole circle
-		(at 12.446 10.16)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "16" thru_hole oval
+		(at 12.446 10.16 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "aea99b8d-57dd-4a02-9487-d0e9982e887e")
 	)
-	(pad "17" thru_hole circle
-		(at 9.906 10.16)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "17" thru_hole oval
+		(at 9.906 10.16 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "ee77eaf4-5d01-454c-b47d-ac2cdaa559e9")
 	)
-	(pad "18" thru_hole circle
-		(at 7.366 10.16)
-		(size 1.818 1.818)
-		(drill 1.02)
+	(pad "18" thru_hole oval
+		(at 7.366 10.16 270)
+		(size 1.2 2)
+		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "c365553a-c0cc-4b78-9ded-159ad22565ed")
+	)
+	(model "D:/Users/Lucas/Documents/KiCad/8.0/3dmodels/CustomComponents.3dshapes/MKS-TMC2209.step"
+		(offset
+			(xyz -3.75 139.1 -7.9)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
 	)
 )
